@@ -1,0 +1,369 @@
+.container {
+  text-align: center;
+  color: #131c44;
+  padding: 1rem;
+}
+
+.s-container {
+  padding: 4rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.s-container p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 5px 1rem;
+
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: #909acd;
+  color: #131c44;
+
+  border-radius: 7px;
+
+}
+
+.s-container h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.s-container h2 {
+  margin: 0;
+  width: 40rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.5;
+  line-height: 1.3;
+}
+
+
+.cards-div {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  /* border: 1px solid black; */
+  /* width: 50%; */
+  /* height: 420px; */
+  padding: 1rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  max-width: 100%;
+  height: 15rem;
+  border: 1px solid #dadada;
+  transition: 0.2s ease-in;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.cards-div .text {
+  text-align: start;
+  padding: 1rem;
+  width: 18rem;
+  height: 10rem;
+}
+
+.cards-div .text p {
+  line-height: 1.3;
+  opacity: 0.5;
+}
+
+.cards-div .text h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-div .image {
+  width: auto;
+  height: 15rem;
+}
+
+.d-link-container {
+  padding: 3rem 4rem 5rem 4rem;
+  margin: 2rem;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  height: 18rem;
+  text-align: start;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../../assets/images/HomePage/DOC-LINK-BANNER.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.d-link-container .text {
+
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  text-align: start;
+  width: 70%;
+}
+
+.d-link-container .text h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.d-link-container h2 {
+  margin: 10px 0;
+  color: white;
+}
+
+.d-link-container .text .main-text p {
+  color: white;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.6;
+}
+
+.d-link-container .text .read-docs-links {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease-in;
+}
+
+.d-link-container .text .read-docs-links:hover {
+  transform: translateX(6px);
+}
+
+.d-link-container .text .read-docs-links i {
+  margin-left: 0.5rem;
+  padding-top: 0.1rem;
+}
+
+.d-link-container .text .read-docs-links:hover {
+  color: #c2c2c2;
+}
+
+.services .service-container {
+  display: flex;
+  margin: 1.5rem;
+}
+
+.services .service-container .s-box {
+  display: flex;
+
+  background-color: #f8f9fa;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding: 1rem 1rem;
+  text-align: start;
+}
+
+.services .service-container .s-box i {
+  margin: 1.3rem 1rem 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.services .service-container .s-box .text h2 {
+  margin: 1rem 0 0;
+}
+
+.services .service-container .s-box .text p {
+
+  margin: 5px 0;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.services .service-container .s-box .text .services-links p {
+  margin: 5px 0;
+}
+
+.services .service-container .s-box .text .services-links i {
+  font-size: 1rem;
+  padding-bottom: 1.1rem;
+}
+
+
+.services .service-container .s-box .text .services-links {
+  display: flex;
+
+  height: 1.1rem;
+  margin: 0 0 1rem 0;
+  text-align: start;
+  align-items: center;
+  color: #131c44;
+  transition: 0.3s ease;
+}
+
+.services .service-container .s-box .text .services-links:hover {
+  transform: translateX(6px);
+}
+
+
+.f-contain {
+  padding: 4rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 1.5rem;
+  /* border: 1px solid black; */
+}
+
+.f-contain .tag {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 5px 1rem;
+
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: #909acd;
+  color: #131c44;
+
+  border-radius: 7px;
+
+}
+
+.f-contain h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.f-contain .tagline {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.5;
+  line-height: 1.3;
+}
+
+.f-contain .feed-cards {
+  display: flex;
+
+}
+
+.f-contain .feed-cards .f-box {
+  display: flex;
+
+  background-color: #f8f9fa;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding: 1rem 1rem;
+  text-align: start;
+}
+
+.f-contain .feed-cards .f-box .f-card-text .timestamp {
+  display: flex;
+  align-items: center;
+}
+
+.f-contain .feed-cards .f-box .f-card-text .timestamp p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.f-contain .feed-cards .f-box .f-card-text .timestamp i {
+  padding-top: 2px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.f-contain .feed-cards .f-box .f-card-text h3 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.f-contain .feed-cards .f-box .f-card-text i {
+  color: #354868;
+}
+
+.f-contain .feed-cards .f-box .f-card-text .services-links i {
+  font-size: 0.8rem;
+}
+
+.f-contain .feed-cards .f-box .f-card-text p {
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+
+.d2-link-container {
+  margin: 2rem;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  height: 18rem;
+  text-align: start;
+  opacity: 1;
+  background-color: #2c2c30;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url('../../assets/images/HomePage/TECH-WEB.svg');
+  background-size: cover;
+  background-position: center;
+
+  height: 23rem;
+  object-fit: cover;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.d2-link-container .text {
+  color: white;
+  text-align: center;
+}
+
+.d2-link-container .text p {
+  font-weight: 300;
+}
+
+.d2-link-container .text .check-button {
+
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+
+  width: 8rem;
+  height: 3rem;
+
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(195deg,#94a5f0, #131c44);
+  transition: 0.3s ease;
+}
+
+.d2-link-container .text .check-button:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px #2c85eb4d;
+
+}

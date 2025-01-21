@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  
+  .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    /* background: linear-gradient(195deg, #94a5f0, #131c44); */
+
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Added transition for smooth disappearing */
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+    background-color: white;
+    /* background: linear-gradient(195deg, #94a5f0, #131c44); */
+
+  }
+  
+
+
+/* ---------------------------- */
+
+nav {
+    font-family: "Roboto Slab", sans-serif;
+
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(195deg, #94a5f0, #131c44);
+
+    height: 4.5rem;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+
+    text-decoration: none;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 1rem;
+    list-style: none;
+}
+
+nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+
+}
+
+.twoth-ul {
+    padding-right: 2.5rem;
+}
+
+nav .logo {
+    padding-left: 1rem;
+}
+
+nav ul li img {
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+    height: 2.5rem;
+}
+
+ul .user-logo {
+    font-size: 1.5rem;
+}
