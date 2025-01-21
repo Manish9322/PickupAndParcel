@@ -22,7 +22,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/user" element={<User />} />
             <Route path="/support" element={<Sprt />} />
-            <Route path="/faq" element={<Faq />} />
           </Routes>
         </Router>
       </div>
