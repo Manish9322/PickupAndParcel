@@ -8,7 +8,7 @@ import Contact from "./pages/Contact/contact.jsx";
 import User from "./pages/User/user.jsx";
 import Sprt from "./pages/Support/support.jsx";
 import Order from "./Pages/Order-Placement/order.jsx";
-import Faq from "./Pages/Faq/Faq.jsx";
+
 
 function App() {
   return (
@@ -24,6 +24,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/user" element={<User />} />
             <Route path="/support" element={<Sprt />} />
+            <Route path="/track" element={<TrackPage />} />
+
           </Routes>
         </Router>
       </div>

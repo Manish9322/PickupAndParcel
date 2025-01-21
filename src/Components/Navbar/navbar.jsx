@@ -29,6 +29,9 @@ const navbar = () => {
           <li>
             <Link to="/contact" class="nav-link">CONTACT</Link>
           </li>
+          <li>
+            <Link to="/track" class="nav-link">TRACK</Link>
+          </li>
         </ul>
 
         <ul className="twoth-ul">
