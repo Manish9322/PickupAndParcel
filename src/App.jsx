@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import theme from "./Pages/About/theme"; // Path to your theme file
 import Navbar from "./Components/Navbar/navbar.jsx";
 import Home from "../src/Pages/Home/home.jsx";
 import About from "../src/Pages/About/about.jsx";
