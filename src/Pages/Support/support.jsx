@@ -1,8 +1,9 @@
 import React from "react";
+import Faq from '../Faq/Faq'
 
 const support = () => {
   return <>
-  <h1>SUPPORT PAGE</h1>
+  <Faq/>
   </>;
 };
 
