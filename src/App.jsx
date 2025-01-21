@@ -7,7 +7,7 @@ import Contact from "./pages/Contact/contact.jsx";
 import User from "./pages/User/user.jsx";
 import Sprt from "./pages/Support/support.jsx";
 import Order from "./Pages/Order-Placement/order.jsx";
-import Faq from "../Pages/Faq/Faq.jsx";
+import Faq from "./Pages/Faq/Faq.jsx";
 
 function App() {
   return (
