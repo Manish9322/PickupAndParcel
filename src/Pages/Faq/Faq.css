@@ -1,0 +1,179 @@
+.main {
+    margin: 5% auto;
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.accordian {
+    background: linear-gradient(145deg, #f8f9fd, #eef1f8);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#h1 {
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0 0 20px;
+    color: #2853A2;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.title:hover {
+    background: #eef1f8;
+    transform: scale(1.02);
+}
+
+.title h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+.title span {
+    font-size: 24px;
+    color: #2853A2;
+    transition: transform 0.3s ease;
+}
+
+.title:hover span {
+    transform: rotate(90deg);
+}
+
+.Content {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    padding: 10px 20px;
+    background: rgba(19, 28, 69, 0.05);
+    border-left: 4px solid #2853A2;
+    border-radius: 5px;
+    margin-top: -10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.Content.open {
+    max-height: 300px;
+    opacity: 1;
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 300px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        max-height: 300px;
+        opacity: 1;
+    }
+    to {
+        max-height: 0;
+        opacity: 0;
+    }
+}
+
+.helpline {
+    background: linear-gradient(90deg, #eef1f8, #fff);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.helpline h1 {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2853A2;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.helpline .contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    gap: 20px;
+}
+
+.contact .contact-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.contact-item h2 {
+    font-size: 20px;
+    color: #2853A2;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.contact-item p:hover {
+    color: #2853A2;
+}
+
+.contact-item .icon {
+    font-size: 40px;
+    color: #2853A2;
+    margin-bottom: 10px;
+    padding: 10px;
+}
