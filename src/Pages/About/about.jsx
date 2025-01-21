@@ -28,12 +28,9 @@ function About() {
         >
           <Container>
             <Typography
-              variant="h2"
+              variant="h1"
               gutterBottom
-              color="#3b3b3b"
               sx={{
-                fontFamily: "'Open Sans'",
-                fontWeight: "600",
                 fontSize: { xs: "32px", md: "50px" }, // Responsive font size
                 wordWrap: "break-word", // Ensure text doesn't overflow
               }}
@@ -50,14 +47,28 @@ function About() {
                 letterSpacing: "0.5px",
                 color: "#666",
                 px: { xs: 2, sm: 4 }, // Add padding for smaller screens
-                textAlign: "center",
+                textAlign: "left",
               }}
             >
-              Hello everyone! Here we are on your service providing a platform that enables users to
-              request parcel pickups, track deliveries, and pay for services conveniently. At Pickup and
-              Pay Parcel, we believe in making logistics simple, transparent, and secure. We are
-              contributing to society with all these services and working to make your life much easier.
-              Our platform bridges the gap between senders and recipients by offering reliable parcel pickup and delivery services tailored to your needs. Whether it’s a small package or a bulk shipment, we’ve got you covered.
+              Hello everyone! Here we are, proudly at your service, offering a 
+              reliable platform that enables users to request parcel pickups, track deliveries 
+              in real-time, and pay for services with ease and flexibility. At Pickup and Pay 
+              Parcel, we are committed to redefining how logistics work for individuals and businesses,
+               making the process seamless, transparent, and secure.<br></br>
+
+              We understand the challenges faced by senders and recipients in traditional 
+              delivery systems — whether it’s a lack of tracking options, complex payment 
+              systems, or delays in service. That’s why we’ve built a solution that not only 
+              addresses these pain points but also introduces features that simplify your everyday
+               logistics needs.<br></br>
+
+              Our platform bridges the gap between senders and recipients by offering services 
+              tailored to suit every need. Whether it’s a small package, a high-value item, or a 
+              bulk shipment, our system ensures that your parcels are picked up and delivered with 
+              care and efficiency. We leverage technology to provide real-time tracking, giving you
+               peace of mind by letting you know exactly where your parcel is at every step.
+
+
             </Typography>
             <Button
               variant="contained"
@@ -100,12 +111,13 @@ function About() {
                     }
                   }}
                 >
-                  <Typography variant="h4" gutterBottom sx={{ color: '#3b3b3b', fontFamily: "'Open Sans'", fontWeight: "600", fontSize: "30px" }}>
+                  <Typography variant="h2" gutterBottom >
                     Our Vision
                   </Typography>
-                  <Typography sx={{ fontFamily: "railway", fontSize: "16px", fontWeight: "400", lineHeight: "1.5", letterSpacing: "0.5", color: '#666' }}>
-                    To become the most trusted logistics partner, providing seamless and reliable parcel
-                    delivery services across the globe.
+                  <Typography variant='p1'>
+                  Our vision is to become the most trusted and innovative logistics partner, transforming the 
+                  way parcels are picked up, tracked, and delivered. We aspire to build a future where logistics
+                   is seamless, accessible, and empowering for everyone.<br></br><br></br>
                   </Typography>
                 </Box>
               </Grid>
@@ -124,12 +136,14 @@ function About() {
                     }
                   }}
                 >
-                  <Typography  gutterBottom sx={{ color: '#3b3b3b', fontFamily: "'Open Sans'", fontWeight: "600", fontSize: "30px" }}>
+                  <Typography variant='h2' gutterBottom >
                     Our Mission
                   </Typography>
-                  <Typography sx={{ fontFamily: "railway", fontSize: "16px", fontWeight: "400", lineHeight: "1.5", letterSpacing: "0.5", color: '#666' }}>
-                    To ensure fast, secure, and affordable delivery services with exceptional customer
-                    satisfaction.
+                  <Typography variant='p1'>
+                  Our mission is to revolutionize the logistics industry by providing fast, secure, and 
+                  customer-centric parcel delivery services. We aim to simplify the process for individuals 
+                  and businesses by offering innovative solutions that prioritize transparency, efficiency, 
+                  and reliability.
                   </Typography>
                 </Box>
               </Grid>
@@ -140,7 +154,7 @@ function About() {
         {/* Why Choose Us Section */}
         <Box sx={{ py: 6 }}>
           <Container>
-            <Typography  textAlign="center" gutterBottom sx={{ color: '#3b3b3b', fontFamily: "'Open Sans'", fontWeight: "600", fontSize: "30px" }}>
+            <Typography textAlign="center" gutterBottom variant='h2'>
               Why Choose Us?
             </Typography>
             <Grid container spacing={4} justifyContent="center">
@@ -155,10 +169,10 @@ function About() {
                     transition: "all 0.3s ease-in-out",
                   }
                 }}>
-                  <Typography  gutterBottom sx={{ color: '#3b3b3b', fontFamily: "'Open Sans'", fontWeight: "600", fontSize: "30px" }}>
+                  <Typography gutterBottom variant='h3'>
                     Fast Delivery
                   </Typography>
-                  <Typography sx={{ fontFamily: "railway", fontSize: "16px", fontWeight: "400", lineHeight: "1.5", letterSpacing: "0.5", color: '#666' }}>
+                  <Typography variant='p2'>
                     Experience quick and reliable parcel delivery services tailored to your needs.
                   </Typography>
                 </Box>
@@ -175,10 +189,10 @@ function About() {
                     transition: "all 0.3s ease-in-out",
                   }
                 }}>
-                  <Typography  gutterBottom sx={{ color: '#3b3b3b', fontFamily: "'Open Sans'", fontWeight: "600", fontSize: "30px" }}>
+                  <Typography gutterBottom variant='h3'>
                     Real-Time Tracking
                   </Typography>
-                  <Typography sx={{ fontFamily: "railway", fontSize: "16px", fontWeight: "400", lineHeight: "1.5", letterSpacing: "0.5", color: '#666' }}>
+                  <Typography variant='p2'>
                     Monitor your parcel’s journey with our advanced GPS tracking system.
                   </Typography>
                 </Box>
@@ -196,10 +210,10 @@ function About() {
 
                   }
                 }}>
-                  <Typography gutterBottom sx={{ color: '#3b3b3b', fontFamily: "'Open Sans'", fontWeight: "600", fontSize: "30px" }}>
+                  <Typography gutterBottom variant='h3'>
                     Secure Payments
                   </Typography>
-                  <Typography sx={{ fontFamily: "railway", fontSize: "16px", fontWeight: "400", lineHeight: "1.5", letterSpacing: "0.5", color: '#666' }}>
+                  <Typography variant='p2'>
                     Multiple payment options for a seamless and secure experience.
                   </Typography>
                 </Box>
@@ -211,27 +225,27 @@ function About() {
         {/* Statistics Section */}
         <Box sx={{ py: 6, bgcolor: "background.default" }}>
           <Container>
-            <Typography  textAlign="center" gutterBottom sx={{ color: '#3b3b3b', fontFamily: "'Open Sans'", fontWeight: "600", fontSize: "30px" }}>
+            <Typography textAlign="center" gutterBottom variant='h2'>
               Our Journey in Numbers
             </Typography>
             <Grid container spacing={4} justifyContent="center">
               <Grid item xs={12} md={3} textAlign="center">
-                <Typography  color="#666">
+                <Typography variant='p1'>
                   000
-                </Typography>
-                <Typography sx={{ fontFamily: "railway", fontSize: "16px", fontWeight: "400", lineHeight: "1.5", letterSpacing: "0.5", color: '#666' }}>Deliveries Completed</Typography >
+                </Typography><br></br>
+                <Typography variant='p1'>Deliveries Completed</Typography >
               </Grid>
               <Grid item xs={12} md={3} textAlign="center">
-                <Typography  color="#666">
+                <Typography variant='p1'>
                   000
-                </Typography>
-                <Typography sx={{ fontFamily: "railway", fontSize: "16px", fontWeight: "400", lineHeight: "1.5", letterSpacing: "0.5", color: '#666' }}>Happy Customers</Typography>
+                </Typography><br></br>
+                <Typography variant='p1'>Happy Customers</Typography>
               </Grid>
               <Grid item xs={12} md={3} textAlign="center">
-                <Typography  color="#666">
+                <Typography variant='p1'>
                   000
-                </Typography>
-                <Typography sx={{ fontFamily: "railway", fontSize: "16px", fontWeight: "400", lineHeight: "1.5", letterSpacing: "0.5", color: '#666' }}>Cities Served</Typography>
+                </Typography><br></br>
+                <Typography variant='p1'>Cities Served</Typography>
               </Grid>
             </Grid>
           </Container>
@@ -239,8 +253,10 @@ function About() {
 
         {/* Call to Action */}
         <Box sx={{ py: 6, textAlign: "center", bgcolor: "#ecfffd", color: "#fff" }}>
-          <Container>
-            <Typography  gutterBottom sx={{ color: '#3b3b3b', fontFamily: "'Open Sans'", fontWeight: "600", fontSize: "40px" }}>
+          <container>
+          <Grid container spacing={4} alignItems="center">
+            <Grid item xs={12} md={6}>
+            <Typography gutterBottom variant='h3'>
               Ready to Get Started?
             </Typography>
             <Typography sx={{ mb: 4, fontFamily: "railway", fontSize: "16px", fontWeight: "400", lineHeight: "1.5", letterSpacing: "0.5", color: '#666' }}>
@@ -257,8 +273,32 @@ function About() {
             }}>
               Sign Up Now
             </Button>
-          </Container>
-        </Box>
+          </Grid>
+          
+          <Grid item xs={12} md={6}>
+
+
+          {/* Call to Action */}
+            <Typography gutterBottom variant='h3'>
+              Join Pickup And Pay Parcel
+            </Typography>
+            <Typography sx={{ mb: 4, fontFamily: "railway", fontSize: "16px", fontWeight: "400", lineHeight: "1.5", letterSpacing: "0.5", color: '#666' }}>
+              Find you a greatful job at pickup and pay parcel.
+            </Typography>
+            <Button variant="contained" size="large" sx={{
+              backgroundColor: "#0eb9d3", // Normal background color
+              borderRadius: "50px",
+              "&:hover": {
+                backgroundColor: "#131c44", // Hover background color
+              },
+              color: "#fff", fontSize: "15px"// Text color
+            }}>
+              Carrer
+            </Button>
+      </Grid>
+      </Grid>
+      </container>
+      </Box>
       </div>
     </>
   );
